@@ -1,0 +1,21 @@
+.container{
+    width: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.style{
+    height: 150px;
+    width: 150px;
+    margin-right: 10px;
+
+}
+
+.roi{
+    color: black;
+    height: 150px;
+    width: 150px;
+    margin-right: 10px;
+}
