@@ -1,29 +1,55 @@
 window.onload = function(){
+     function random_bg_Color(){
+        var x = Math.floor(Math.random() * 256);
+        var y = Math.floor(Math.random() * 256);
+        var z = Math.floor(Math.random() * 256);
+        var color = "rgb(" + x + "," + y + "," + z + ")";
 
+    }
+  console.log (random_bg_Color());
+/*    
 let jeudeCartes = [];    
-
+    var bgColor;
 for(i=0; i<=52; i++){
     let jeudeCartes = [];  
     let carteJeu = document.createElement('img');
-    carteJeu.src = "https://via.placeholder.com/150";
+    carteJeu.src = "https://via.placeholder.com/150/"+bgColor;
     carteJeu.setAttribute("class","style");
-    carteJeu.setAttribute("onclick","local");
     let contenCartes = document.querySelector(".container");
     contenCartes.appendChild(carteJeu);
     jeudeCartes.push(i);
     console.log(jeudeCartes);
     
 }
-var cartes = document.querySelectorAll(".style");
-for(i=0;i<cartes.length;i++){
-    cartes[i].addEventListener("click", function local(){
-    alert("les images sont cliquables");
-    document.querySelectorAll(".style").style.backgroundColor="red";
-})
 }
+*/
+
+    for(i=0;i<52;i++){
+    let carteJeu = document.createElement('img');
+    let contenCartes = document.querySelector(".container");
+    contenCartes.appendChild(carteJeu);
+    carteJeu.src= "https://via.placeholder.com/150/";
+    carteJeu.setAttribute("class","style");
+    
+}
+    function changeColor(){
+    var imageColor = document.querySelectorAll("img");
+    console.log(imageColor);
+    // for (i=0;i<52;i++){
+    
+    // imageColor[i].addEventListener("click",function(event){
+    // alert("les images sont cliquables");
+    // imageColor[i].src= "https://via.placeholder.com/150/";
+
+    
+
+
+    }
 
 
 }
+
+
 
 
 /*
@@ -75,12 +101,3 @@ random_bg_color();
     }
 */
 
-
-
-
-
-
-
-
-
-    
